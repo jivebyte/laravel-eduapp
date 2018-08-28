@@ -4,7 +4,7 @@
     <div class="row justify-content-end">
         <a href="/categories/create" class="btn btn-success">CREATE NEW</a>
     </div>
-    <div class="row">     
+    <div class="row">
             <table class ="table table-striped table-border table-hover text-center">
                 <thead>
                     <tr>
@@ -27,9 +27,9 @@
                                     {!!Form::close()!!}
                                 </div>
                         </td>
-                        <td>	
+                        <td>
                             <a href="/levels/{{$c->cat_id}}" class="btn btn-info">DETAILS</a>
-                            <a href="#" class="btn btn-info">MAP</a>
+                            <a href="/map/{{$c->cat_id}}" class="btn btn-info">MAP</a>
                         </td>
                     </tr>
                     @endforeach

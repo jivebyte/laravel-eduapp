@@ -45,7 +45,7 @@ class LevelsController extends Controller
         $this->validate($request, [
             'location' =>'required'
         ]);
-        
+
         $level = new Level();
         $level->lev_location = $request->input('location');
         $level->cat_id = $cid;

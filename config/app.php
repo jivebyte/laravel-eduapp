@@ -147,11 +147,12 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Cornford\Googlmapper\MapperServiceProvider::class,
 
         /*
          * Package Service Providers...
          */
-
+        FarhanWazir\GoogleMaps\GMapsServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -211,7 +212,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-
+        'GMaps' => FarhanWazir\GoogleMaps\Facades\GMapsFacade::class,
+        'Mapper' => Cornford\Googlmapper\Facades\MapperFacade::class,
     ],
 
 ];
